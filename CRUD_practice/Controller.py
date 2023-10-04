@@ -40,7 +40,7 @@ class Controller:
         ctgNo = input('카테고리 입력 : ')
 
         # 객체에 넣어서
-        product = Product(prdName, prdPrice, prdMaker, prdColor,ctgNo, prdNo) # 객체에 넣어서
+        product = Product(prdNo, prdName, prdPrice, prdMaker, prdColor,ctgNo) # 객체에 넣어서
         # DAO 클래스의 insert()호출하면서 product객체 전달
         self.dao.update(product) # 객체를 넘겨준다.
     
